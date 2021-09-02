@@ -72,7 +72,7 @@
                                 <exclude>META-INF/*.SF</exclude>
                                 <exclude>META-INF/*.DSA</exclude>
                                 <exclude>META-INF/*.RSA</exclude>
-                            </excludes>
+			</excludes>
                         </filter>
                     </filters>
                 </configuration>
@@ -164,7 +164,7 @@
                 defined in https://docs.oracle.com/javase/8/docs/api/ are in the unnamed module."
                 -->
                 <maven.javadoc.skip>true</maven.javadoc.skip>
-            </properties>
+          </properties>
         </profile>
     </profiles>
 </project>
