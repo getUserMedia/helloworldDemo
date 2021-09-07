@@ -3,7 +3,10 @@
 
 name: GitHub Actions Demo
 
-on: [push]
+on:
+  push:
+    branches:    
+      - master
 
 
 jobs:
@@ -14,5 +17,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: build
+    - name: build1
       run: sudo docker run -it --rm --name hello-world-project -v "$(pwd)":"$(pwd)" -w "$(pwd)" maven:latest mvn package
+
